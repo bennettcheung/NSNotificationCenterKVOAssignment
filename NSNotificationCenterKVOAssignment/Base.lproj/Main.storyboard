@@ -10,6 +10,61 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Third-->
+        <scene sceneID="uJi-OF-xxw">
+            <objects>
+                <viewController title="Third" id="19z-xs-zwe" customClass="ThirdViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s90-DM-n51">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAJ-dU-rG5">
+                                <rect key="frame" x="67.5" y="460" width="240" height="128"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XVz-nW-rT9">
+                                        <rect key="frame" x="23.5" y="49" width="193" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="19z-xs-zwe" id="NDR-Fe-qvn"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="0pa-IK-Uxl"/>
+                                    <constraint firstAttribute="width" constant="240" id="mDt-vZ-WcZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.1301739512" blue="0.065475757529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="dAJ-dU-rG5" firstAttribute="centerX" secondItem="s90-DM-n51" secondAttribute="centerX" id="DlJ-k0-1Nf"/>
+                            <constraint firstItem="IOU-qp-OQ7" firstAttribute="bottom" secondItem="dAJ-dU-rG5" secondAttribute="bottom" constant="30" id="oA8-jM-ofL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IOU-qp-OQ7"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="EP1-9B-gQX" appends="YES" id="ROt-CS-gwH"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Third" id="PKu-8h-6rJ"/>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="oA8-jM-ofL" id="hvn-RP-kea"/>
+                        <outlet property="textField" destination="XVz-nW-rT9" id="981-p9-JnW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FTW-js-KJ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="EP1-9B-gQX">
+                    <connections>
+                        <action selector="viewTapped:" destination="19z-xs-zwe" id="3Pj-Vt-eGO"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-1439.2" y="675.11244377811101"/>
+        </scene>
         <!--Second-->
         <scene sceneID="75V-jt-FgQ">
             <objects>
@@ -100,6 +155,7 @@
                     <connections>
                         <segue destination="vEY-w2-wej" kind="relationship" relationship="viewControllers" id="92U-Ic-VU4"/>
                         <segue destination="Baf-SD-ODp" kind="relationship" relationship="viewControllers" id="UOa-Ca-Mif"/>
+                        <segue destination="19z-xs-zwe" kind="relationship" relationship="viewControllers" id="Yf5-Ad-ImH"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bPP-uk-7QN" userLabel="First Responder" sceneMemberID="firstResponder"/>
