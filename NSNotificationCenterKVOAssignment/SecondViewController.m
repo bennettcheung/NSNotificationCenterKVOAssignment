@@ -10,7 +10,7 @@
 
 @interface SecondViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *numberLabel;
-@property (nonatomic, assign)NSString *numberString;
+@property (nonatomic, assign)NSNumber *numberValue;
 
 @end
 
@@ -28,8 +28,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.numberLabel.text = self.numberString;
     
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+        self.numberLabel.text = [self.numberValue stringValue];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,10 +56,16 @@
     
     if (userinfo[@"stepperValue"])
     {
-        self.numberString = userinfo[@"stepperValue"];
+        self.numberValue = userinfo[@"stepperValue"];
+        
         if (self.numberLabel)
-            self.numberLabel.text = self.numberString;
+            self.numberLabel.text = [self.numberValue stringValue];
     }
+}
+
+-(void)dealloc{
+    [[NSNotificationCenter defaultCenter]removeObserver:self];
+    
 }
 
 @end

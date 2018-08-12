@@ -18,9 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Second View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19y-pt-JyH">
-                                <rect key="frame" x="97" y="62" width="180" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19y-pt-JyH">
+                                <rect key="frame" x="97" y="70" width="180" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -35,7 +34,9 @@
                         <color key="backgroundColor" red="0.99098422230000005" green="1" blue="0.63139392380000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="TlG-ps-rh8" firstAttribute="centerX" secondItem="ofu-1j-P3Y" secondAttribute="centerX" id="Lfn-Qw-zwL"/>
+                            <constraint firstItem="19y-pt-JyH" firstAttribute="top" secondItem="WeW-vh-atm" secondAttribute="top" constant="50" id="emb-hD-own"/>
                             <constraint firstItem="TlG-ps-rh8" firstAttribute="centerY" secondItem="ofu-1j-P3Y" secondAttribute="centerY" id="fLu-wR-5mg"/>
+                            <constraint firstItem="19y-pt-JyH" firstAttribute="centerX" secondItem="ofu-1j-P3Y" secondAttribute="centerX" id="oSq-BL-QMa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WeW-vh-atm"/>
                     </view>
@@ -62,9 +63,8 @@
                                     <action selector="stepperValueChanged:" destination="vEY-w2-wej" eventType="valueChanged" id="IoL-g6-7Qd"/>
                                 </connections>
                             </stepper>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSG-0w-fPm">
-                                <rect key="frame" x="110" y="62" width="155" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSG-0w-fPm">
+                                <rect key="frame" x="110" y="70" width="155" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -73,11 +73,16 @@
                         <color key="backgroundColor" red="0.85006677929999996" green="0.54869214229999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Yl8-fK-zZY" firstAttribute="centerY" secondItem="Kzy-lz-YoH" secondAttribute="centerY" id="ion-pB-Ddf"/>
+                            <constraint firstItem="CSG-0w-fPm" firstAttribute="centerX" secondItem="Kzy-lz-YoH" secondAttribute="centerX" id="nb4-YR-G8c"/>
+                            <constraint firstItem="CSG-0w-fPm" firstAttribute="top" secondItem="ODN-zA-xvR" secondAttribute="top" constant="50" id="psv-b1-oL4"/>
                             <constraint firstItem="Yl8-fK-zZY" firstAttribute="centerX" secondItem="Kzy-lz-YoH" secondAttribute="centerX" id="yVQ-mk-LNU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ODN-zA-xvR"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" id="qY8-CN-lei"/>
+                    <connections>
+                        <outlet property="stepper" destination="Yl8-fK-zZY" id="nAk-RR-sEy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AKq-VE-aBD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

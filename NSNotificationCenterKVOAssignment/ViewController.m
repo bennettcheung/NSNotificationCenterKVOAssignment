@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIStepper *stepper;
 
 @end
 
@@ -17,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.stepper.value = 50.0;
 }
 
 
@@ -27,7 +29,7 @@
 
 - (IBAction)stepperValueChanged:(UIStepper *)sender {
     NSNumber *stepperValue = [[NSNumber alloc] initWithDouble:sender.value];
-    NSDictionary *valueDictionary = @{@"stepperValue" : [stepperValue stringValue]};
+    NSDictionary *valueDictionary = @{@"stepperValue" : stepperValue};
     [[NSNotificationCenter defaultCenter] postNotificationName:@"stepperValueChanged" object:self userInfo:valueDictionary];
 }
 
