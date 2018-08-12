@@ -15,6 +15,7 @@
 		9135B2BA211FC80500B334EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9135B2B9211FC80500B334EE /* main.m */; };
 		9135B2C4211FC80500B334EE /* NSNotificationCenterKVOAssignmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9135B2C3211FC80500B334EE /* NSNotificationCenterKVOAssignmentTests.m */; };
 		9135B2CF211FC80500B334EE /* NSNotificationCenterKVOAssignmentUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9135B2CE211FC80500B334EE /* NSNotificationCenterKVOAssignmentUITests.m */; };
+		9135B2DE211FC97A00B334EE /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9135B2DD211FC97A00B334EE /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		9135B2CA211FC80500B334EE /* NSNotificationCenterKVOAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSNotificationCenterKVOAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9135B2CE211FC80500B334EE /* NSNotificationCenterKVOAssignmentUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSNotificationCenterKVOAssignmentUITests.m; sourceTree = "<group>"; };
 		9135B2D0211FC80500B334EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9135B2DC211FC97A00B334EE /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		9135B2DD211FC97A00B334EE /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 				9135B2AD211FC80400B334EE /* ViewController.h */,
 				9135B2AE211FC80400B334EE /* ViewController.m */,
 				9135B2B0211FC80400B334EE /* Main.storyboard */,
+				9135B2DC211FC97A00B334EE /* SecondViewController.h */,
+				9135B2DD211FC97A00B334EE /* SecondViewController.m */,
 				9135B2B3211FC80500B334EE /* Assets.xcassets */,
 				9135B2B5211FC80500B334EE /* LaunchScreen.storyboard */,
 				9135B2B8211FC80500B334EE /* Info.plist */,
@@ -262,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9135B2DE211FC97A00B334EE /* SecondViewController.m in Sources */,
 				9135B2AF211FC80400B334EE /* ViewController.m in Sources */,
 				9135B2BA211FC80500B334EE /* main.m in Sources */,
 				9135B2AC211FC80400B334EE /* AppDelegate.m in Sources */,

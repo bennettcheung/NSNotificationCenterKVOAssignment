@@ -25,5 +25,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)stepperValueChanged:(UIStepper *)sender {
+    NSNumber *stepperValue = [[NSNumber alloc] initWithDouble:sender.value];
+    NSDictionary *valueDictionary = @{@"stepperValue" : [stepperValue stringValue]};
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"stepperValueChanged" object:self userInfo:valueDictionary];
+}
 
 @end
